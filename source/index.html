@@ -3,7 +3,62 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент главной страницы
+<main class="main-container">
+	<div class="hero page__centerer">
+		<hi class="visually-hidden">Бронирование лагеря</hi>
+		<div class="hero__img">
+			<img src="#" alt="Изображение лагеря">
+		</div>
+		<div class="hero__form">
+			<input type="date"></input>
+			<input type="number">
+		</div>
+		<button class="hero__button" type="button">Забронировать</button>
+	</div>
+	<section class="spesial page__centerer">
+		<h2 class="visually-hidden">Набор услуг</h2>
+		<ul class="special__list">
+			<li class="special__item">
+				<a  class="special__link" href="#living">Проживание</a>
+				<img class="special__img special__img--living">
+			</li>
+			<li class="special__item">
+				<a  class="special__link" href="#meal">Питание</a>
+				<img class="special__img special__img--meal">
+			</li>
+			<li class="special__item">
+				<a  class="special__link" href="#programm">Программа</a>
+				<img class="special__img special__img--programm">
+			</li>
+			<li class="special__item">
+				<a  class="special__link" href="#about-camp">О лагере</a>
+				<img class="special__img special__img--about-camp">
+			</li>
+			<li class="special__item">
+				<a  class="special__link" href="#contacts">Контакты</a>
+				<img class="special__img special__img--contacts">
+			</li>
+		</ul>
+
+	</section>
+	<section class="feature">
+		<h2 class="visually-hidden">Иконки с плюсами лагеря</h2>
+		<ul class="feature__list">
+			<li class="feature__item feature__item--icon-city">
+				<div>Интересный город</div>
+			</li>
+			<li class="feature__item feature__item--icon-hotel">
+				<div>Комфорное проживание</div>
+			</li>
+			<li class="feature__item feature__item--icon-activity">
+				<div>Много активностей</div>
+			</li>
+			<li class="feature__item feature__item--icon-programm">
+				<div>Полностью продуманная программа</div>
+			</li>
+		</ul>
+	</section>
+
+
 </main>
 {% endblock %}
