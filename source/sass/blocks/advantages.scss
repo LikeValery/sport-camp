@@ -1,0 +1,47 @@
+.advantages {
+	background-color: #ffffff;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 20px;
+
+	@media #{$mobile-only} {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+.advantages__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin: 0;
+	padding: 20px;
+}
+
+.advantages__title {
+	grid-column: 1 / -1;
+	text-align: center;
+	font-family: var(--accent-font);
+}
+
+.advantages__item {
+	&::marker {
+		color: transparent;
+	}
+
+	&--icon-city {
+		grid-column: 1/2;
+	}
+
+	&--icon-hotel {
+		grid-column: 2/-1;
+	}
+}
+
+.advantages__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: 600;
+}

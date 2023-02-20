@@ -5,63 +5,104 @@
 {% block main %}
 <main class="main-container">
 	<div class="hero page__centerer">
-		<img class="hero__img" src="#" alt="Изображение лагеря">
+		<img class="hero__img" src="./source/img/samokat2.jpeg" alt="Изображение лагеря" width="100" height="100">
 	</div>
-	<div class="shedule">
-		<h2>Рассписание набора в лагерь</h2>
-		<ul class="shedule__list">
-			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
-		</ul>
-		<ul class="shedule__list">
-			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
-		</ul>
-		<ul class="shedule__list">
-			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
-		</ul>
-	</div>
-	<section class="spesial page__centerer">
-		<h2 class="visually-hidden">Набор услуг</h2>
-		<ul class="special__list">
-			<li class="special__item">
-				<a  class="special__link" href="#living">Проживание</a>
-				<img class="special__img special__img--living">
-			</li>
-			<li class="special__item">
-				<a  class="special__link" href="#meal">Питание</a>
-				<img class="special__img special__img--meal">
-			</li>
-			<li class="special__item">
-				<a  class="special__link" href="#programm">Программа</a>
-				<img class="special__img special__img--programm">
-			</li>
-			<li class="special__item">
-				<a  class="special__link" href="#about-camp">О лагере</a>
-				<img class="special__img special__img--about-camp">
-			</li>
-			<li class="special__item">
-				<a  class="special__link" href="#contacts">Контакты</a>
-				<img class="special__img special__img--contacts">
-			</li>
-		</ul>
 
-	</section>
-	<section class="feature">
-		<h2 class="visually-hidden">Иконки с плюсами лагеря</h2>
-		<ul class="feature__list">
-			<li class="feature__item feature__item--icon-city">
-				<div>Интересный город</div>
+	<div class="shedule">
+		<h2 class="shedule__title">Рассписание смен в лагере</h2>
+		<ul class="shedule__list">
+			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
+		</ul>
+		<ul class="shedule__list">
+			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
+		</ul>
+		<ul class="shedule__list">
+			<li class="shedule__item shedule__item--icon"><div>10-17 июня</div></li>
+		</ul>
+	</div>
+
+	<div class="choose-form">
+		<a class="choose-form__link" href="javascript:void(0)">Отправить заявку</a>
+	</div>
+
+	<section class="advantages">
+		<h2 class="advantages__title">Преимущества лагеря</h2>
+		<ul class="advantages__list">
+			<li class="advantages__item special__item--icon-city">
+				<div>Красивейший город</div>
 			</li>
-			<li class="feature__item feature__item--icon-hotel">
+			<li class="advantages__item advantages__item--icon-hotel">
 				<div>Комфорное проживание</div>
 			</li>
-			<li class="feature__item feature__item--icon-activity">
+			<li class="advantages__item advantages__item--icon-activity">
 				<div>Много активностей</div>
 			</li>
-			<li class="feature__item feature__item--icon-programm">
+			<li class="advantages__item advantages__item--icon-programm">
 				<div>Полностью продуманная программа</div>
 			</li>
 		</ul>
 	</section>
+
+	<div class="information page__centerer">
+		<h2 class="information__title">Полная информация</h2>
+		<ul class="information__list">
+			<li class="information__item">
+				<a class="information__link" href="#living">Проживание</a>
+				<img class="information__img" alt="Фото гостиницы">
+				<p class="information__description">Проживание в отличной гостиннице</p>
+			</li>
+			<li class="information__item">
+				<a class="information__link" href="#meal">Питание</a>
+				<img class="information__img" alt="Фото столовой">
+				<p class="information__description">Вкуснейшее трех разовое питание</p>
+			</li>
+			<li class="information__item">
+				<a class="information__link" href="#programm">Программа</a>
+				<img class="information__img" alt="Картинка со спортсменами">
+				<p class="information__description">Увдекательная программа в окружении знающих тренеров</p>
+			</li>
+			<li class="information__item">
+				<a class="information__link" href="#contacts">Полный трансфер детей</a>
+				<img class="information__img" alt="Абстрактная картинка, взрослый держит ребенка за руку">
+				<p class="information__description">Встретим ребенка в Москве и в сопровождении взрослого привезем в лагерь</p>
+			</li>
+		</ul>
+	</div>
+
+
+	<section class="spesial-offer">
+		<h2 class="spesial-offer__title">Специальные предложения</h2>
+		<div class="spesial-offer__item">
+			<p class="spesial-offer__description">Скидка 30% за брата</p>
+		</div>
+		<div class="spesial-offer__item">
+			<p class="spesial-offer__description">При бронировании самым первым</p>
+		</div>
+	</section>
+
+	<div class="our-team">
+		<h2 class="our-team__title">Наша команда</h2>
+		<ul class="our-team__list">
+			<li class="our-team__item">
+				<img class="our-team__pfoto" alt="Фотограыия тренера BMX">
+				<p class="our-team__description"></p>
+			</li>
+			<li class="our-team__item">
+				<img class="our-team__pfoto" alt="Фотограыия тренера Самакат">
+				<p class="our-team__description"></p>
+			</li>
+			<li class="our-team__item">
+				<img class="our-team__pfoto" alt="Фотограыия вожатого">
+				<p class="our-team__description"></p>
+			</li>
+		</ul>
+
+
+	</div>
+
+	<div class="contacts">
+		<h2 class="contacts__title">Как с нами связаться</h2>
+	</div>
 
 
 </main>

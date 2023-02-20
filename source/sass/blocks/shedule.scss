@@ -1,0 +1,23 @@
+.shedule {
+	background-color: #ffffff;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.shedule__title {
+	font-family: var(--accent-font);
+	text-align: center;
+}
+
+.shedule__item {
+	&::marker {
+		color: transparent;
+	}
+}
+
+.shedule__list {
+	margin: 0;
+}

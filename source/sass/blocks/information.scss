@@ -1,0 +1,42 @@
+.information {
+	background-color: #ffffff;
+	padding: 20px 0 20px;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.information__title {
+	font-family: var(--accent-font);
+	text-align: center;
+	padding: 20px;
+}
+
+.information__list {
+	margin: 0;
+	padding: 0;
+}
+
+.information__item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&::marker {
+		color: transparent;
+	}
+}
+
+.information__img {
+	grid-column: 1/2;
+}
+
+.information__link {
+	grid-column: 2/-1;
+	text-decoration: none;
+	color: #000000;
+	font-family: var(--accent-font);
+}
+
+.information__description {
+	grid-column: 2/-1;
+}
