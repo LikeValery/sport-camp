@@ -1,0 +1,77 @@
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+
+	@media #{$mobile-only} {
+		flex-direction: column;
+		align-items: stretch;
+		--toggle-visibility: visible;
+	}
+
+	@media #{$not-mobile} {
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&--nojs {
+		@media #{$mobile-only} {
+			--toggle-visibility: collapse;
+			--nav-position: static;
+		}
+	}
+
+	&--closed {
+		--toggle-icon: url("../../icons/stack.svg#burger");
+
+		@media #{$mobile-only} {
+			--nav-visibility: collapse;
+		}
+	}
+
+	&--color-invert {
+		@media #{$desktop-only} {
+			--link-color: #ffffff;
+			--link-decor-color: currentColor;
+		}
+	}
+}
+
+
+.main-nav__item {
+	font-family: var(--main-font);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+
+	&::marker {
+		color: transparent;
+	}
+
+	@media #{$not-mobile} {
+		padding: 12px 16px;
+	}
+}
+
+.main-nav__toogle {
+	visibility: var(--toggle-visibility, collapse);
+	position: absolute;
+	display: block;
+	padding: 0;
+	top: -46px;
+	right: 0;
+	border: none;
+	cursor: pointer;
+	background-color: #ffffff;
+	z-index: 3;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-color: #000000;
+		mask: var(--toggle-icon, url("../../icons/stack.svg#cross")) no-repeat center / contain;
+	}
+}
