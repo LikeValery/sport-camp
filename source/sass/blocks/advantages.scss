@@ -26,17 +26,43 @@
 }
 
 .advantages__item {
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+
 	&::marker {
 		color: transparent;
 	}
 
 	&--icon-city {
 		grid-column: 1/2;
+		--icon: url("../../icons/city.png");
 	}
 
-	&--icon-hotel {
+	&--icon-food {
 		grid-column: 2/-1;
+		--icon: url("../../icons/stack.png#food");
 	}
+
+	&--icon-activity {
+		--icon: url("../../icons/stack.png#activity");
+	}
+
+	&--icon-programm {
+		grid-column: 2/-1;
+		--icon: url("../../icons/stack.png#programm");
+	}
+}
+
+.advantages__item::before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: #333333 var(--icon) no-repeat center / 100px 100px;
+	margin: 0 auto;
 }
 
 .advantages__link {
@@ -44,4 +70,8 @@
 	text-transform: uppercase;
 	color: #000000;
 	font-weight: 600;
+}
+
+.advantages__description {
+	padding: 10px;
 }

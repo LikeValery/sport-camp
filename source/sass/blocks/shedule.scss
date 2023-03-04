@@ -5,6 +5,7 @@
 	line-height: 24px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin: 0;
 }
 
 .shedule__title {
@@ -16,8 +17,21 @@
 	&::marker {
 		color: transparent;
 	}
+	background-color: #f2f2f2;
+	padding: 20px 80px;
+	margin-bottom: 10px;
 }
 
 .shedule__list {
 	margin: 0;
+	padding-left: 0;
+	font-weight: 600;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+
+	@media #{$tablet-only} {
+		gap: 20px;
+	}
 }

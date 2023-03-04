@@ -1,6 +1,6 @@
 .information {
 	background-color: #ffffff;
-	padding: 20px 0 20px;
+	padding: 0 0 20px;
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -39,4 +39,8 @@
 
 .information__description {
 	grid-column: 2/-1;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: var(--main-font);
 }

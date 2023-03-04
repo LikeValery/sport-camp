@@ -8,5 +8,13 @@
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	background-color: #c48e36;
+	background-color: #333333;
+}
+
+.choose-form__link:hover {
+	background-color: #000000;
+}
+
+.choose-form__link:active {
+	opacity: 60%;
 }
