@@ -1,7 +1,6 @@
 .information {
 	background-color: #ffffff;
 	padding: 0 0 20px;
-	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
 }
@@ -10,6 +9,18 @@
 	font-family: var(--accent-font);
 	text-align: center;
 	padding: 20px;
+	text-transform: uppercase;
+
+	@media #{$tablet-only} {
+		font-size: 24px;
+		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 24px;
+		line-height: 20px;
+		padding-bottom: 40px;
+	}
 }
 
 .information__list {
@@ -20,6 +31,7 @@
 .information__item {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 
 	&::marker {
 		color: transparent;
@@ -43,4 +55,9 @@
 	font-size: 14px;
 	line-height: 24px;
 	font-family: var(--main-font);
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 24px;
+	}
 }

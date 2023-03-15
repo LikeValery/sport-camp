@@ -4,13 +4,26 @@
 	font-size: 14px;
 	line-height: 24px;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 0;
+	padding-bottom: 40px;
 }
 
 .shedule__title {
 	font-family: var(--accent-font);
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 20px;
+
+	@media #{$tablet-only} {
+		font-size: 24px;
+		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 24px;
+		line-height: 20px;
+		padding-bottom: 40px;
+	}
 }
 
 .shedule__item {
@@ -20,6 +33,11 @@
 	background-color: #f2f2f2;
 	padding: 20px 80px;
 	margin-bottom: 10px;
+
+	@media #{$desktop-only} {
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 .shedule__list {
@@ -30,8 +48,13 @@
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
+	padding-top: 10px;
 
 	@media #{$tablet-only} {
 		gap: 20px;
+	}
+
+	@media #{$desktop-only} {
+		justify-content: space-around;
 	}
 }

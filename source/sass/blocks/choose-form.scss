@@ -9,6 +9,11 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	background-color: #333333;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 24px;
+	}
 }
 
 .choose-form__link:hover {

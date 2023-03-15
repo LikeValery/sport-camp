@@ -83,6 +83,10 @@
 		line-height: 32px;
 		font-weight: 600;
 	}
+
+	@media #{$desktop-only} {
+		gap: 206px;
+	}
 }
 
 .main-nav__item {

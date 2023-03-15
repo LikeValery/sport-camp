@@ -1,0 +1,45 @@
+.our-team {
+	font-family: var(--main-font);
+	color: #000000;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.our-team__title {
+	font-family: var(--accent-font);
+	text-align: center;
+	padding: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+	@media #{$tablet-only} {
+		font-size: 24px;
+		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 24px;
+		line-height: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+.our-team__list {
+	margin: 0;
+}
+
+.our-team__item {
+	&::marker {
+		color: transparent;
+	}
+}
+
+.our-team__description {
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
