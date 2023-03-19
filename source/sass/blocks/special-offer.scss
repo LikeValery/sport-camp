@@ -61,6 +61,10 @@
 	--icon: url("../../icons/stack.svg#special-offer");
 	grid-column: 1/1;
 	grid-row: 1/-1;
+
+	@media #{$desktop-only} {
+		grid-row: 1/-1;
+	}
 }
 
 .special-offer__img::before {
@@ -76,5 +80,11 @@
 
 	@media #{$not-mobile} {
 		margin-left: 50px;
+	}
+
+	@media #{$desktop-only} {
+		width: 200px;
+		height: 200px;
+		background-size: 200px 200px;
 	}
 }

@@ -1,15 +1,33 @@
 .hero {
-	display: block;
 	background-color: #9b1010;
 	height: 400px;
 	width: 100%;
 	margin: 0;
 	background-size: 100px 100px;
-	--icon: url("../../icons/stack.svg#camp-ico");
+	--icon: url("../../icons/stack.svg#samokater");
+	z-index: 2;
+	display: grid;
 }
 
 .hero::before {
 	content: "";
 	display: block;
-	background: rgb(5 5 5) var(--icon) no-repeat center / 93px 123px;
+	width: 320px;
+	height: 505px;
+	background: var(--icon) no-repeat center/500px 500px;
+}
+
+.hero::after {
+	@media #{$mobile-only} {
+		content: none;
+	}
+
+	@media #{$not-mobile} {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 345px;
+		background: url("../../icons/stack.svg#bmx") no-repeat right/400px 400px;
+		margin-top: -50px;
+	}
 }

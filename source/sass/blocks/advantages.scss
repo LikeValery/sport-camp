@@ -9,6 +9,10 @@
 		display: grid;
 		grid-template-columns: 1fr;
 	}
+
+	@media #{$not-mobile} {
+		padding-bottom: 20px;
+	}
 }
 
 .advantages__list {
@@ -36,6 +40,7 @@
 	@media #{$tablet-only} {
 		font-size: 24px;
 		line-height: 20px;
+		padding-bottom: 20px;
 	}
 
 	@media #{$desktop-only} {

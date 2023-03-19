@@ -12,7 +12,9 @@
 	@media #{$not-mobile} {
 		align-items: center;
 		justify-content: space-around;
+		grid-column: 2/-1;
 	}
+
 
 	&--nojs {
 		@media #{$mobile-only} {
