@@ -1,3 +1,15 @@
 .hero {
-	background-color: #ffffff;
+	display: block;
+	background-color: #9b1010;
+	height: 400px;
+	width: 100%;
+	margin: 0;
+	background-size: 100px 100px;
+	--icon: url("../../icons/stack.svg#camp-ico");
+}
+
+.hero::before {
+	content: "";
+	display: block;
+	background: rgb(5 5 5) var(--icon) no-repeat center / 93px 123px;
 }

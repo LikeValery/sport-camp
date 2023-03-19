@@ -58,7 +58,7 @@
 
 	&--icon-city {
 		grid-column: 1/2;
-		--icon: url("../../icons/city.png");
+		--icon: url("../../icons/stack.svg#city");
 
 		@media #{$tablet-only} {
 			grid-column: 1/2;
@@ -69,9 +69,9 @@
 		}
 	}
 
-	&--icon-food {
+	&--icon-living {
 		grid-column: 2/-1;
-		--icon: url("../../icons/stack.png#food");
+		--icon: url("../../icons/stack.svg#living");
 
 		@media #{$tablet-only} {
 			grid-column: 2/3;
@@ -83,7 +83,7 @@
 	}
 
 	&--icon-activity {
-		--icon: url("../../icons/stack.png#activity");
+		--icon: url("../../icons/stack.svg#activity");
 
 		@media #{$tablet-only} {
 			grid-column: 3/4;
@@ -96,7 +96,7 @@
 
 	&--icon-programm {
 		grid-column: 2/-1;
-		--icon: url("../../icons/stack.png#programm");
+		--icon: url("../../icons/stack.svg#programm");
 
 		@media #{$tablet-only} {
 			grid-column: 4/5;
@@ -113,7 +113,7 @@
 	display: block;
 	width: 100px;
 	height: 100px;
-	background: #333333 var(--icon) no-repeat center / 100px 100px;
+	background: #ffffff var(--icon) no-repeat center / 100px 100px;
 	margin: 0 auto;
 
 	@media #{$desktop-only} {

@@ -4,6 +4,8 @@
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
 	@media #{$desktop-only} {
 		display: grid;
@@ -19,6 +21,12 @@
 	font-size: 20px;
 	line-height: 20px;
 	text-transform: uppercase;
+	grid-column: 1/-1;
+	grid-row: 1/1;
+
+	@media #{$mobile-only} {
+		padding-left: 48px;
+	}
 
 	@media #{$tablet-only} {
 		font-size: 24px;
@@ -35,11 +43,38 @@
 
 .special-offer__item {
 	margin: 0 auto;
+	grid-column: 1/-1;
 }
 
 .special-offer__description {
+	align-items: left;
+	margin: 0;
+
+
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 24px;
+	}
+}
+
+.special-offer__img {
+	--icon: url("../../icons/stack.svg#special-offer");
+	grid-column: 1/1;
+	grid-row: 1/-1;
+}
+
+.special-offer__img::before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: #ffffff var(--icon) no-repeat left / 100px 100px;
+
+	@media #{$mobile-only} {
+		margin: 0;
+	}
+
+	@media #{$not-mobile} {
+		margin-left: 50px;
 	}
 }
