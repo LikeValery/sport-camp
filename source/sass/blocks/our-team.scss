@@ -29,11 +29,24 @@
 
 .our-team__list {
 	margin: 0;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		max-height: 200px;
+		min-height: 200px;
+	}
 }
 
 .our-team__item {
 	&::marker {
 		color: transparent;
+	}
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 }
 
@@ -41,5 +54,6 @@
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 24px;
+		padding-top: 20px;
 	}
 }
