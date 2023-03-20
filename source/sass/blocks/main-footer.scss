@@ -4,3 +4,46 @@
 	color: #ffffff;
 	overflow-x: hidden;
 }
+
+.main-footer__link {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: var(--accent-font);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.main-footer__inf {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-footer__logo {
+	grid-column: 1/1;
+	grid-row: 1/1;
+	margin: 0 auto;
+	padding-top: 30px;
+
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 80%;
+	}
+}
+
+.main-footer__phone {
+	grid-column: 3/-1;
+	margin: 0 auto;
+	padding-top: 30px;
+
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 80%;
+	}
+}

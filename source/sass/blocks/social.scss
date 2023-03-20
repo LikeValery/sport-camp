@@ -1,0 +1,50 @@
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	grid-column: 2/3;
+}
+
+.social__item {
+	&::marker {
+		color: transparent;
+	}
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+}
+
+.social__link {
+	color: #1e1d1d;
+
+	&--icon_vk {
+		--icon: url("../../icons/stack.svg#vk");
+	}
+
+	&--icon_tg {
+		--icon: url("../../icons/stack.svg#tg");
+	}
+
+	&--icon_inst {
+		--icon: url("../../icons/stack.svg#inst");
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 64px;
+		height: 54px;
+		background: var(--icon) no-repeat center/64px 54px;
+		box-sizing: border-box;
+	}
+
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 80%;
+	}
+}
