@@ -9,6 +9,9 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	background-color: #333333;
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
 
 	@media #{$not-mobile} {
 		font-size: 20px;

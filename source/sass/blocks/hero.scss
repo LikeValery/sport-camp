@@ -15,6 +15,12 @@
 	width: 320px;
 	height: 505px;
 	background: var(--icon) no-repeat center/500px 500px;
+
+	@media #{$desktop-only} {
+		background-size: 742px 834px;
+		width: 688px;
+		height: 839px;
+	}
 }
 
 .hero::after {
@@ -29,5 +35,9 @@
 		height: 345px;
 		background: url("../../icons/stack.svg#bmx") no-repeat right/400px 400px;
 		margin-top: -50px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: -330px;
 	}
 }

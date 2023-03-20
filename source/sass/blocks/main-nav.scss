@@ -65,6 +65,7 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
+	overflow: hidden;
 
 	@media #{$mobile-only} {
 		visibility: var(--nav-visibility, visible);
@@ -79,11 +80,12 @@
 	@media #{$not-mobile} {
 		flex-wrap: wrap;
 		column-gap: 36px;
-		justify-content: flex-end;
+		justify-content: space-between;
 		padding: 0;
 		font-size: 16px;
 		line-height: 32px;
 		font-weight: 600;
+		overflow: hidden;
 	}
 
 	@media #{$desktop-only} {
@@ -189,7 +191,7 @@
 
 .main-nav__link:hover {
 	&:hover {
-		color: #a66605;
+		color: var(--accent-color);
 	}
 
 	&:active {
