@@ -40,6 +40,13 @@
 
 .information__img {
 	grid-column: 1/2;
+	display: block;
+}
+
+.information__photo {
+	@include bg-image("test");
+	height: 280px;
+	width: 270px;
 }
 
 .information__link {

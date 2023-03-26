@@ -1,0 +1,99 @@
+.personal-info {
+	background-color: #ffffff;
+	font-family: var(--main-font);
+	color: #000000;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	border: none;
+	padding: 0;
+}
+
+.personal-info__list {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 0;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		margin: 0;
+		padding: 0;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+.personal-info__item {
+	&::marker {
+		color: transparent;
+	}
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	gap: 20px;
+
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		gap: 10px;
+	}
+}
+
+.personal-info__text {
+	align-items: center;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.personal-info__text--field {
+	display: block;
+	width: 100%;
+	font-family: var(--main-font);
+	color: #000000;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 0;
+	outline: 1px solid #e7e7e7;
+	appearance: textfield;
+	box-sizing: border-box;
+
+	@media #{$not-mobile} {
+		display: block;
+		width: 100%;
+		font-family: var(--main-font);
+		color: #000000;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 0;
+		outline: 1px solid #e7e7e7;
+		appearance: textfield;
+		box-sizing: border-box;
+	}
+
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 80%;
+	}
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+	appearance: none;
+}

@@ -1,0 +1,72 @@
+.transfer {
+	border: 1px solid #e7e7e7;
+}
+
+.transfer__title {
+	font-family: var(--main-font);
+	color: #000000;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.transfer__item {
+	&::marker {
+		color: transparent;
+	}
+}
+
+.transfer__element[type="checkbox"] {
+	appearance: none;
+	margin: 0;
+	margin-right: 4px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #cdcdcd;
+	place-content: center;
+
+	@media #{$not-mobile} {
+		width: 40px;
+		height: 40px;
+	}
+
+	&:checked::before {
+		content: "";
+		margin: auto;
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color: #9b1010;
+		mask: url("../../icons/stack.svg#tick-checkbox") no-repeat center / contain;
+
+		@media #{$not-mobile} {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	&:hover {
+		border: 1px solid #bababa;
+	}
+}
+
+.transfer__checkbox {
+	display: grid;
+	grid-template-columns: 44px 1fr;
+	align-items: center;
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+
+	@media #{$not-mobile} {
+		grid-template-columns: 57px 1fr;
+		padding-top: 1px;
+	}
+
+	&:hover {
+		font-weight: 600;
+	}
+}

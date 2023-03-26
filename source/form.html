@@ -3,7 +3,108 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-form">
+	<div class="page__centerer">
+		<h1 class="main-form__title">Подбор смены</h1>
+		<p class="main-form__description">Заполните анкету, и мы Вам перезвоним<br></p>
+	</div>
+	<form class="form-filter page__centerer" action="https://echo.htmlacademy.ru" method="get">
+		<div class="form-filter__container">
+			<fieldset class="personal-info">
+				<legend class="visually-hidden">Форма с информацией о родителе</legend>
+				<ul class="personal-info__list">
+					<li class="personal-info__item">
+						<label class="personal-info__text" for="user-name">Имя:<span aria-hidden="true">*</span></label>
+						<input class="personal-info__text personal-info__text--field" placeholder="Введите ваше имя" type="text" name="user-name" id="user-name" required>
+					</li>
+					<li class="personal-info__item">
+						<label class="personal-info__text" for="user-sername">Фамилия:<span aria-hidden="true">*</span></label>
+						<input class="personal-info__text personal-info__text--field" placeholder="Введите вашу фамилию" type="text" name="newsletter-email" id="user-sername" required>
+					</li>
+					<li class="personal-info__item">
+						<label class="personal-info__text" for="child-age">Возраст:</label>
+						<input class="personal-info__text personal-info__text--field" placeholder="Укажите возраст ребенка" type="number" name="newsletter-email" id="child-age">
+					</li>
+					<li class="personal-info__item">
+						<label class="personal-info__text" for="user-city">Город:<span aria-hidden="true">*</span></label>
+						<input class="personal-info__text personal-info__text--field" placeholder="Город проживания" type="text" name="home-city" id="user-city" required>
+					</li>
+				</ul>
+			</fieldset>
+
+
+			<!-- Почта и телефон-->
+			<fieldset class="form-contacts">
+				<legend class="form-contacts__title">Контактные данные</legend>
+				<ul class="form-contacts__list">
+					<li class="form-contacts__item form-contacts__item--email">
+						<label class="form-contacts__text" for="your-email">E-mail:<span aria-hidden="true">*</span>
+						</label>
+						<input class="form-contacts__field" placeholder="kuklachev@gmail.com" type="email" name="form-email" id="your-email" required>
+						<span class="form-contacts__icon form-contacts__icon--email">
+						</span>
+					</li>
+					<li class="form-contacts__item form-contacts__item--phone">
+						<label class="form-contacts__text" for="your-telephone">Телефон:<span aria-hidden="true">*</span></label>
+						<input class="form-contacts__field" placeholder="8 (960) 900-60-90" type="number" name="form-telephone" id="your-telephone" required>
+						<span class="form-contacts__icon form-contacts__icon--phone">
+						</span>
+					</li>
+				</ul>
+			</fieldset>
+
+
+			<!-- Выбрать смену-->
+			<fieldset class="form-optional optional">
+				<legend class="optional__title">Выбрать смену</legend>
+				<ul class="optional__list">
+					<li class="optional__item">
+						<label class="optional__checkbox">
+							<input type="checkbox" class="optional__element" name="optional" value="10-17 июня">
+							10-17 июня
+						</label>
+					</li>
+					<li class="optional__item">
+						<label class="optional__checkbox optional__checkbox--water">
+							<input type="checkbox" class="optional__element" name="additional" value="10-17 июня">
+							10-17 июня
+						</label>
+					</li>
+					<li class="optional__item">
+						<label class="optional__checkbox optional__checkbox--milk">
+							<input type="checkbox" class="optional__element" name="optional" value="10-17 июня">
+							10-17 июня
+						</label>
+					</li>
+					<li class="optional__item">
+						<label class="optional__checkbox">
+							<input type="checkbox" class="optional__element" name="optional" value="10-17 июня">
+							10-17 июня
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset class="transfer">
+				<legend class="transfer__title">Хочу трансфер</legend>
+				<ul class="transfer__list">
+					<li class="transfer__item">
+						<label class="transfer__checkbox">
+							<input type="checkbox" class="transfer__element" name="transfering" >
+							Трансфер из Москвы
+						</label>
+					</li>
+
+				</ul>
+
+			</fieldset>
+			</div>
+
+			<div class="form-button-container">
+				<button class="form-button-container__button" type="submit">Отправить заявку</button>
+				<div class="form-button-container__nessesary" aria-hidden="true">* — Обязательные поля</div>
+			</div>
+
+	</form>
 </main>
 {% endblock %}

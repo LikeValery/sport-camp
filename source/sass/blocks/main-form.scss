@@ -1,0 +1,15 @@
+.main-form__title {
+	color: #333333;
+
+	@media #{$not-mobile} {
+		font-size: 60px;
+		line-height: 60px;
+		padding-top: 38px;
+		color: #333333;
+	}
+}
+
+.main-form__description {
+	text-transform: uppercase;
+	padding-top: 20px;
+}

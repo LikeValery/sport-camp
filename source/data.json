@@ -33,6 +33,27 @@
 			"height": 320,
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"regata-hotel": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 552,
+					"height": 499
+				},
+				{
+					"viewport": "tablet",
+					"width": 708,
+					"height": 609
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 270
+				}
+			]
 		}
 	}
 }

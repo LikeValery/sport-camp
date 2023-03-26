@@ -1,0 +1,21 @@
+.form-button-container {
+	display: grid;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form-button-container__button {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 8px 15px;
+	background-color: #9b1010;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.form-button-container__nessesary {
+	padding-bottom: 20px;
+}
