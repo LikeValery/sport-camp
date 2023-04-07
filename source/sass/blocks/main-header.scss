@@ -12,4 +12,14 @@
 		display: grid;
 		grid-template-columns: 200px 1fr;
 	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 319px 1fr;
+		margin-left: 30px;
+	}
+}
+
+.main-header__logo {
+	display: grid;
+	grid-template-columns: 400px 100px;
 }

@@ -1,3 +1,23 @@
 .logo {
 	display: block;
 }
+
+.logo__image {
+	content: "";
+	display: block;
+	width: 310px;
+	height: 120px;
+	background: url("../../icons/stack.svg#logo") no-repeat center / cover;
+	background-color: #ffffff;
+	background-size: 300px 400px;
+}
+
+.logo__pic {
+	content: "";
+	display: block;
+	width: 310px;
+	height: 120px;
+	background: url("../../icons/stack.svg#logo") no-repeat center / cover;
+	background-color: #ffffff;
+	background-size: 300px 400px;
+}
